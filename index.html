@@ -9,26 +9,55 @@
   <title>Pie Chart with Chart.js</title>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-    crossorigin="anonymous">
+  crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-  <div class="wrapper">
-    <div class="container d-flex flex-column justify-content-center align-items-center">
-      <div class="title text-center mb-5">
-        <h1>My Contribution to Multinational Companies</h1>
-      </div>
-      <div class="chart-wrapper">
-        <canvas id="myChart"></canvas>
-      </div>
-    </div>
+
+  <div class="title text-center mb-5">
+    <h1>My Contribution to Multinational Companies</h1>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
-  <script src="./js/script.js"></script>
+  <!-- the canvas objects for each chart have their own class. you can
+  change the styles (position, scale, etc.) in the CSS file called style.css which is
+  located in the css folder -->
+  <div id="infoText">
+    <h3>Company Revenue</h3>
+    ($)
+    <hr>
+    Tencent:54,594,000,000<br>
+    Nintendo:10,914,000,000<br>
+    Sony:76,929,000,000<br>
+    Apple:260,174,000,000<br>
+    Google:160,740,000,000<br>
+    Microsoft:143,020,000,000<br><br>
+
+    <h3>I Spent On Their Services 2020</h3>
+
+    ($)
+    <hr>
+    Tencent:120<br>
+    Nintendo:1,013<br>
+    Sony:1,420<br>
+    Apple:2,164<br>
+    Google:420<br>
+    Microsoft:260<br><br>
+
+  </div>
+  <div class="chart-wrapper1">
+    <canvas id="myChart"></canvas>
+  </div>
+  <div class="chart-wrapper2">
+    <canvas id="myChart2"></canvas>
+  </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+<script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -1,13 +1,39 @@
 body {
-  margin: 0;
+  margin: 20;
 }
 
 .container {
   height: 100vh;
 }
 
-.chart-wrapper {
+hr{
+  border: none;
+  height: 10px;
+  /* Set the hr color */
+  color: #5A6972; /* old IE */
+  background-color: #5A6972; /* Modern Browsers */
+}
+
+#infoText{
+  padding: 50px;
+  width: 200px;
+  height: auto;
+  /* background-color: purple; */
+  display: inline-block;
+  position: absolute;
+}
+.chart-wrapper1 {
+  width: 900px;
+  display: inline-block;
+  position: relative;
+  top: 30%;
+  left: 5%;
+}
+
+.chart-wrapper2 {
   width: 500px;
-  height: 500px;
-  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+
+  top: -200px;
 }
